@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css"> 
+  <script src="https://kit.fontawesome.com/79a92fa05a.js" crossorigin="anonymous"></script>
+  <title>Random Password</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+        <h2><span class="color1">Generate a</span> password</h2>
+        <h3>Never use an insecure password again !</h3>
+        <button id="generate">
+          <i class="fa-solid fa-bolt"></i>
+            Generate passwords
+        </button>
+    </header>
+    <div class="container-flex">
+      <div class="column">
+        <input type="text" class="pass" onclick="copy(pass1)" id="password1">    
+        <input type="text" class="pass" onclick="copy(pass2)" id="password2">
+      </div>
+
+      <div class="column">
+        <input type="text" class="pass" onclick="copy(pass3)" id="password3"> 
+        <input type="text" class="pass" onclick="copy(pass4)" id="password4"> 
+      </div>
+    </div> 
+    <h3 class="copyTxt">Just click on password to copy it !</h3>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
